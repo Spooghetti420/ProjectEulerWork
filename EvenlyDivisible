@@ -1,0 +1,12 @@
+If a number is divisible by all numbers from 1-20:
+
+It is divisble by all the prime numbers in that range, but also their highest powers that are below 20. i.e.:
+
+16 (from 2 - subsumes 16, 8, 4, and 2)
+9 (from 3 - subsumes 9 and 3)
+5
+7
+11
+13
+17
+19
