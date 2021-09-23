@@ -1,7 +1,7 @@
 class SquaresAndSums {
     public static void main(String[] args) {
         final int n = 100;
-        System.out.println(SumOfSquares(n)-SquareOfSum(n));
+        System.out.println(SquareOfSum(n)-SumOfSquares(n));
         return;
     }
 
