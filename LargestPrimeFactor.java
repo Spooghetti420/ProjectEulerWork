@@ -12,10 +12,11 @@ class LargestPrimeFactor {
     }
 
     public static boolean isPrime(long n) {
-        if (n % 2 == 0) return false;
-        final long highest = (long) Math.floor(Math.sqrt((double) n));
-        for (long k = 3; k < highest; k+=2) {
-            if (n % k == 0) {
+        if (n == 2) return true;
+        // We only need to check up to sqrt(n) to test for primality. At least 1 factor must be smaller than this if composite.
+        int maxCheck = (int) Math.ceil(Math.sqrt((double) n));
+        for (int i = 2; i <= maxCheck; i++) {
+            if (n % i == 0) {
                 return false;
             }
         }
